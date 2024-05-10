@@ -1,0 +1,38 @@
+// ================== style for header section ==============//
+.banner{
+    background: url("/public/images/section\ 1.jpg") no-repeat center/cover;
+    .navbar-brand{
+        font-weight: 900 !important;
+        font-size: 1.4rem;
+        @include media-min-md{
+            font-size: 1.5rem !important;
+           
+        }
+    }
+    
+    .navbar-nav{
+        @include media-min-xl{
+            padding-left: 8rem !important;
+        }
+        
+    }
+    .nav-item{
+        a:hover{
+            background-color: $clr-primary;
+            color: white !important;
+            border-radius: 5px;
+        }
+    }
+    h2{
+        color: white;
+        &:hover{
+            color: pink !important;
+            transition: all 2s ease-in-out;
+            font-size: 24px;
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        }
+    }  
+    
+}
+

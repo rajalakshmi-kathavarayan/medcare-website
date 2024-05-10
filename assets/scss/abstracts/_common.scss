@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif !important;
+}
+.text{
+font-size: 18px;
+font-weight: 300;
+line-height: 39px;
+@include media-min-md{
+    width: 50%;
+}
+}
+.text-1{
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: justify;
+}
+.text-2{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 29px;
+}
+.font-size{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+.clr-grey{
+    color: $clr-grey !important;
+}
+.clr-lightblue{
+    background-color: $clr-lightblue !important;
+}
+.clr-blue{
+    background-color: #E6F4FB;
+}
+.clr-primary{
+    background-color: $clr-primary !important;
+}
+.clr-primary1{
+    background-color: $clr-primary1 !important;
+}
+.clr-primary2{
+    background-color: $clr-primary2 !important;
+}
+.clr-light{
+    background-color: $clr-light !important;
+}
+.clr-grey2{
+    background-color: $clr-grey2 !important;
+}
+.fw{
+    @include media-min-xl{
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+}
+.fw1{
+    font-weight: 600;
+}
+.fw2{
+    font-weight: 500;
+}
+
+

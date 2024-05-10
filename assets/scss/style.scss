@@ -1,0 +1,238 @@
+@import './abstracts/variables';
+@import './mixins/breakpoints';
+@import './abstracts/common';
+@import './includes/header';
+@import './includes/footer';
+
+// ======================= style for section-1 ===================//
+.box-hover{
+    &:hover{
+        background-color: $clr-primary !important;
+        p{
+            color:white !important;
+        }
+        .card-hover{
+            background-color: $clr-lightblue !important;
+        }
+    }
+}
+// .box1-hover{
+//     &:hover{
+//         background-color: $clr-primary1 !important;
+//         p{
+//             color:black !important;
+//         }
+//         .card1-hover{
+//             background-color: $clr-primary2 !important;
+//         }
+//     }
+// }
+
+
+// ======================= style for section-2 ===================//
+.image{
+    height: 300px;
+    @include media-min-lg{
+        height: 500px;
+    }
+   
+}
+.icon{
+    color:$clr-green !important;
+}
+// ===================== style for section-3 ===================//
+.wrapper-3{
+    overflow: hidden;
+    transition: 0.5s ease;
+    cursor: pointer;
+    &:hover{
+        transform: scale(0.9);
+    }
+}
+.patient-card{
+    &:hover{
+        background-color: $clr-primary !important;
+        p{
+            color:white !important;
+        }
+        a{
+            color: $clr-primary!important;
+            background-color: white !important;
+        }
+    }
+}
+.image-2{
+    background:$clr-grey1;
+    border-radius: 50%;
+}
+.arrow-1{
+    background-color: rgb(195, 195, 195);
+    font-weight: 100;
+}
+.arrow-2{
+    background-color: orangered;
+}
+.text-3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: justify;
+}
+// ===================== style for section-4 ==================//
+.image-4{
+    @include media-min-md{
+        height: 500px;
+    }
+    
+}
+// ==================== style for section-5 ===================//
+.image-5{
+   height: 350px;
+   width: 420px;
+   margin-top: -60px;
+}
+.bg-blue{
+    background-color: $clr-darkblue;
+}
+// =================== style for section-6 ===================//
+.image-6{
+    @include media-min-md{
+        height: 300px;
+    }
+    
+}
+.posi{
+    z-index: 2;
+    opacity: 0.7;
+}
+.wrapper-1{
+    overflow: hidden;
+}
+.wrapper-1 img{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.wrapper-1 img:hover {
+    transform: scale(1.2);
+    // filter: grayscale(0%);
+    }
+.text-6{
+    margin-top: -65px;
+}
+.carousel-indicators [data-bs-target] {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 3px solid $clr-primary;
+    background: transparent;
+}
+.carousel-indicators .active {
+    background-color: $clr-primary !important;
+}
+.width{
+    @include media-min-lg{
+        width: 80%;
+    }
+}
+// ====================== style for section-7 =================//
+.service{
+    margin-bottom: 9rem !important;
+    
+.wrapper {
+    // height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    // border: 6px solid #fff;
+    }
+    .wrapper img {
+    // height: 100%;
+    // width: 100%;
+    // border-radius: 50%;
+    // filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+    }
+    .wrapper img:hover {
+    transform: scale(1.2);
+    // filter: grayscale(0%);
+    }
+}
+.font-family{
+    font-family: 'Roboto Condensed', sans-serif !important;
+    .patient-image{
+        height: 110px;
+        width: 110px;
+    }
+    .quote{
+        height: 2rem;
+        width: 2rem;
+    }
+    .yellow{
+        color: $clr-yellow;
+    }
+    .patient-box:hover{
+        background-color: $clr-light !important;
+    }
+}
+// ==================== style for section-8 ================//
+.subscribe{
+    margin-top: -180px;
+}
+
+// example//
+.image {
+	position: relative;
+}
+
+.image__img {
+	display: block;
+	width: 100%;
+}
+
+.image__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 345px;
+	background: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	// font-family: 'Quicksand', sans-serif;
+	display: flex;
+	// flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+// .image__overlay--blur {
+// 	backdrop-filter: blur(5px);
+// }
+
+// .image__overlay--primary {
+// 	background: #009578;
+// }
+
+// .image__overlay>* {
+// 	transform: translateY(20px);
+// 	transition: transform 0.25s;
+// }
+
+.image__overlay:hover {
+	opacity: 1;
+}
+
+.image__overlay:hover>* {
+	transform: translateY(0);
+}
+
+.image__title {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+// .image__description {
+// 	font-size: 1.25em;
+// 	margin-top: 0.25em;
+// }
